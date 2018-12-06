@@ -1,0 +1,349 @@
+/ *! normalize.css v8.0.1 | MIT Lisansı | github.com/necolas/normalize.css * /
+
+/ * Belge
+   ================================================== ====================
+
+/ **
+ * 1. Tüm tarayıcılarda satır yüksekliğini düzeltin.
+ * 2. iOS'ta yönlendirme değişikliklerinden sonra yazı tipi boyutunun ayarlanmasını önleyin.
+ * /
+
+html {
+  çizgi yüksekliği: 1.15; / * 1 * /
+  -webkit-text-size-adjust:% 100; / * 2 * /
+}
+
+/ * Bölümler
+   ================================================== ====================
+
+/ **
+ * Tüm tarayıcılarda marjı kaldırın.
+ * /
+
+vücut {
+  kenar boşluğu: 0;
+}
+
+/ **
+ * IE'de "ana" öğesini sürekli olarak göster.
+ * /
+
+ana {
+  Ekran bloğu;
+}
+
+/ **
+ * 'Section' içindeki 'h1' öğelerindeki font boyutunu ve kenar boşluğunu düzeltin ve
+ Chrome, Firefox ve Safari'de * makale ”bağlamları.
+ * /
+
+h1 {
+  yazı tipi boyutu: 2em;
+  kenar boşluğu: 0,67em 0;
+}
+
+/ * Gruplama içeriği
+   ================================================== ====================
+
+/ **
+ * 1. Firefox'ta doğru kutu boyutlandırmayı ekleyin.
+ * 2. Edge ve IE'deki taşmayı gösterin.
+ * /
+
+hr {
+  kutu boyutlandırma: içerik kutusu; / * 1 * /
+  yükseklik: 0; / * 1 * /
+  taşma: görünür; / * 2 * /
+}
+
+/ **
+ * 1. Tüm tarayıcılarda kalıtım boyutunu ve font boyutunu ölçeklendirin.
+ * 2. Tüm tarayıcılarda garip yazı tipi boyutlandırmasını düzeltin.
+ * /
+
+pre {
+  yazı tipi ailesi: monospace, monospace; / * 1 * /
+  yazı tipi boyutu: 1em; / * 2 * /
+}
+
+/ * Metin düzeyinde semantik
+   ================================================== ====================
+
+/ **
+ * IE 10'daki aktif linklerdeki gri arkaplanı kaldırın.
+ * /
+
+a {
+  arka plan rengi: saydam;
+}
+
+/ **
+ * 1. Chrome 57- alt sınırını kaldırın
+ * 2. Chrome, Edge, IE, Opera ve Safari'de doğru metin dekorasyonunu ekleyin.
+ * /
+
+abbr [başlık] {
+  kenar-dip: yok; / * 1 * /
+  metin-dekorasyon: alt çizgi; / * 2 * /
+  metin-dekorasyon: noktalı çizgi altı; / * 2 * /
+}
+
+/ **
+ * Chrome, Edge ve Safari'de doğru font ağırlığını ekleyin.
+ * /
+
+b
+kuvvetli {
+  yazı tipi ağırlığı: bolder;
+}
+
+/ **
+ * 1. Tüm tarayıcılarda kalıtım boyutunu ve font boyutunu ölçeklendirin.
+ * 2. Tüm tarayıcılarda garip yazı tipi boyutlandırmasını düzeltin.
+ * /
+
+kod,
+kbd,
+örnek
+  yazı tipi ailesi: monospace, monospace; / * 1 * /
+  yazı tipi boyutu: 1em; / * 2 * /
+}
+
+/ **
+ * Tüm tarayıcılarda doğru yazı tipi boyutunu ekleyin.
+ * /
+
+küçük {
+  yazı tipi boyutu:% 80;
+}
+
+/ **
+ * 'Sub' ve 'sup' öğelerinin satır yüksekliğini etkilemesini engelle
+ * tüm tarayıcılar.
+ * /
+
+alt,
+sup {
+  yazı tipi boyutu:% 75;
+  çizgi yüksekliği: 0;
+  konum: göreli;
+  dikey hizalama: temel çizgi;
+}
+
+alt {
+  alt: -0.25em;
+}
+
+sup {
+  üst: -0.5em;
+}
+
+/ * Gömülü içerik
+   ================================================== ====================
+
+/ **
+ * IE 10'daki bağlantıların içindeki görüntülerin kenarlığını kaldırın.
+ * /
+
+img {
+  kenarlık stili: yok;
+}
+
+/* Formlar
+   ================================================== ====================
+
+/ **
+ * 1. Tüm tarayıcılarda yazı tipi stillerini değiştirin.
+ * 2. Kenar boşluğunu Firefox ve Safari'de kaldırın.
+ * /
+
+buton,
+giriş,
+, OPTGROUP
+seçin
+textarea {
+  yazı tipi ailesi: miras; / * 1 * /
+  yazı tipi boyutu:% 100; / * 1 * /
+  çizgi yüksekliği: 1.15; / * 1 * /
+  kenar boşluğu: 0; / * 2 * /
+}
+
+/ **
+ * IE'deki taşmayı göster.
+ * 1. Kenardaki taşmayı gösterin.
+ * /
+
+buton,
+giriş {/ * 1 * /
+  taşma: görünür;
+}
+
+/ **
+ * Edge, Firefox ve IE'de metin dönüşümü mirasını kaldırın.
+ * 1. Firefox'taki metin dönüşümünün mirasını kaldırın.
+ * /
+
+buton,
+seçin {/ * 1 * /
+  metin dönüşümü: yok;
+}
+
+/ **
+ * İOS ve Safari'de tıklanabilir tarzların stilini değiştirememe.
+ * /
+
+buton,
+[Tipi = "ayarlamak"],
+[Tipi = "reset"],
+[type = "gönder"] {
+  -webkit-görünüm: düğme;
+}
+
+/ **
+ * Firefox'ta iç kenarlığı ve dolguyu çıkarın.
+ * /
+
+düğme :: - moz-odak-iç,
+[Type = "button"] :: - moz-odak-iç,
+:: [type = "reset"] - Moz-odak-iç,
+[type = "submit"] :: - moz-focus-inner {
+  kenarlık stili: yok;
+  dolgu malzemesi: 0;
+}
+
+/ **
+ * Önceki kural tarafından belirlenen odak stillerini geri yükleyin.
+ * /
+
+düğmesi: -moz-focusring,
+[Tipi = "ayarlamak"] - Moz-focusring,
+[Tipi = "reset"] - Moz-focusring,
+[type = "submit"]: - moz-focusring {
+  anahat: 1px noktalı ButtonText;
+}
+
+/ **
+ * Firefox'taki dolguyu düzeltin.
+ * /
+
+fieldset {
+  dolgu malzemesi: 0.35em 0.75em 0.625em;
+}
+
+/ **
+ * 1. Edge ve IE'deki metin sarmalarını düzeltin.
+ * 2. IE'deki "fieldset" öğelerinden renk mirasını düzeltin.
+ * 3. Geliştiricilerin sıfıra girdiklerinde yakalanmaması için dolguyu çıkarın.
+ Tüm tarayıcılarda * `fieldset` elemanları.
+ * /
+
+efsane {
+  kutu boyutlandırma: kenar kutusu; / * 1 * /
+  renk: devralma; / * 2 * /
+  ekran: tablo; / * 1 * /
+  maksimum genişlik:% 100; / * 1 * /
+  dolgu malzemesi: 0; / * 3 * /
+  beyaz boşluk: normal; / * 1 * /
+}
+
+/ **
+ * Chrome, Firefox ve Opera'da doğru dikey hizalamayı ekleyin.
+ * /
+
+ilerleme {
+  dikey hizalama: temel çizgi;
+}
+
+/ **
+ * IE 10 + 'da varsayılan dikey kaydırma çubuğunu kaldırın.
+ * /
+
+textarea {
+  taşma: otomatik;
+}
+
+/ **
+ * 1. IE 10'da doğru kutu boyutlandırmayı ekleyin.
+ * 2. IE 10'daki dolguyu çıkarın.
+ * /
+
+[Tipi = "kutusunun"],
+[type = "radyo"] {
+  kutu boyutlandırma: kenar kutusu; / * 1 * /
+  dolgu malzemesi: 0; / * 2 * /
+}
+
+/ **
+ * İmleci, Chrome'daki arttırma ve azaltma düğmelerinin stilini düzeltin.
+ * /
+
+[Tipi = "sayı"] :: - webkit-iç-sıkma-düğmesi,
+[type = "number"] :: - webkit-dış-spin-düğmesi {
+  yükseklik: otomatik;
+}
+
+/ **
+ * 1. Chrome ve Safari'deki garip görünümü düzeltin.
+ * 2. Ana hat stilini Safari'de düzeltin.
+ * /
+
+[type = "arama"] {
+  -webkit-görünüm: metin alanı; / * 1 * /
+  anahat-ofset: -2px; / * 2 * /
+}
+
+/ **
+ * İç dolguyu Chrome'da ve Safari'de macOS'ta kaldırın.
+ * /
+
+[type = "search"] :: - webkit-arama-dekorasyon {
+  -webkit-görünüm: yok;
+}
+
+/ **
+ * 1. iOS ve Safari'deki tıklanabilir tarzların stilini düzeltememe.
+ * 2. Safari'de font özelliklerini 'devralma' olarak değiştirin.
+ * /
+
+:: - webkit dosya yükleme-düğmesi {
+  -webkit-görünüm: düğme; / * 1 * /
+  yazı tipi: inherit; / * 2 * /
+}
+
+/ * Etkileşimli
+   ================================================== ====================
+
+/ *
+ * Edge, IE 10+ ve Firefox'ta doğru ekranı ekleyin.
+ * /
+
+detaylar {
+  Ekran bloğu;
+}
+
+/ *
+ * Tüm tarayıcılarda doğru ekranı ekleyin.
+ * /
+
+özet {
+  görüntüleme: liste-öğe;
+}
+
+/ * Çeşitli
+   ================================================== ====================
+
+/ **
+ * IE 10+ doğru ekran ekleyin.
+ * /
+
+şablon {
+  görüntü yok;
+}
+
+/ **
+ * IE 10'da doğru ekranı ekleyin.
+ * /
+
+[gizli] {
+  görüntü yok;
+}

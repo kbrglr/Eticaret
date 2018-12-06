@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width"/>
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+
+    <!----css-->
+    <script>
+        //Tek Stır Yorum Alanıdır
+    </script>
+    <script src="~/Scripts/myScript.js"></script>
+</head>
+<body>
+<section id="container">
+    <header>
+        <a href="/">
+        <div id="logo"></div>
+        </a>
+        <div id="social-media">
+            <a href="//facebook.com" target="_blank">
+                <div class="social">
+                    <img src="~/Content/img/facebook.png"alt ="Facebook" /> 
+                </div>
+            </a>
+            <a href="//twitter.com" target="_blank">
+                <div class="social">
+                    <img src="~/Content/img/twitter.png" alt="Twetter" />
+                </div>
+            </a>
+            <a href="#" target="_blank">
+            <div class="social">
+                <img src="~/Content/img/youtube.png" alt="GooglePlus"  />
+            </div>
+            </a>
+</div>
+</header>
+    <nav>
+        <div class="nav-item">
+            <span>Ana Sayfa</span>
+        </div>
+        <div class="nav-item">
+            <span>Yazarlar</span>
+        </div>
+        <div class="nav-item">
+            <span>Yeni Eklenenler</span>
+        </div>
+        <div class="nav-item">
+            <span>Kitap Ekle</span>
+        </div>
+        <div class="nav-item" style="width: 192px; border-right: 0">
+            <span>İletişim</span>
+        </div>
+    </nav>
+        <section id="content">
+            @RenderBody()
+        </section>
+    <footer>
+        <small>2018 © Tozlu Raflar | Tüm Hakları Saklıdır.</small>
+    </footer>
+    </section>
+    </body>
+    </html>
